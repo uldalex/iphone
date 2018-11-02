@@ -25,42 +25,13 @@
             controls: false,
             slideWidth: 900
         });
-		
+        
+       
 width = $(window).width();
-if (width > 430) {
-var slider = $('.scrolling_news_ul').bxSlider({  
-mode: 'vertical',
-minSlides: 5,
-slideMargin: 0,
-moveSlides: 1,
-auto: false,
-controls:true,
- pager:false,
-infinScroll:true,
- infiniteLoop : true,
-  });
-  var intervalID =50;
-$('.scrolling_news_ul').on('mousewheel', (function(event, delta, deltaX, deltaY) {
-    var intervalID =50;
-    clearTimeout(intervalID);
-if (delta > 0 ) {
-  if(slider.getCurrentSlide() > 0){ 
-  event.stopPropagation();
-  event.preventDefault();
-  slider.goToPrevSlide();
-  }  
-}
-if (deltaY < 0 ){
-    if(slider.getCurrentSlide() < slider.getSlideCount()-1){
-    event.stopPropagation();
-    event.preventDefault();
-    slider.goToNextSlide();
- 
- 
-  } 
-}
-}))
-};
+
+ $('.scrollbar-inner').scrollbar();
+  
+
 /*Фильтр*/
         $('[data-group]').click(function (e) {
             e.preventDefault()
