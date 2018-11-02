@@ -31,6 +31,7 @@ ul.bxslider {
 .bx-wrapper .bx-controls-auto {
   position: absolute;
   bottom: -30px;
+  right: -10px;
   width: 100%;
 }
 /* LOADER */
@@ -54,21 +55,25 @@ ul.bxslider {
   padding-top: 20px;
 }
 .bx-wrapper .bx-pager.bx-default-pager a {
-  background: #666;
+  background: transparent;
   text-indent: -9999px;
   display: block;
-  width: 10px;
-  height: 10px;
-  margin: 0 5px;
+  width: 2px;
+  min-height: 10px;
+  margin: 0px;
+  margin-left:-6px;
   outline: 0;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  border-radius: 5px;
+  border-radius: none;
 }
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active,
 .bx-wrapper .bx-pager.bx-default-pager a:focus {
-  background: #000;
+  background: #C4C4C4;
+  width: 7px;
+  min-height: 50px;
+
 }
 .bx-wrapper .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
@@ -80,6 +85,12 @@ ul.bxslider {
 .bx-wrapper .bx-pager-item {
   font-size: 0;
   line-height: 0;
+  font-size: 0;
+    line-height: 0;
+    flex-grow: 1;
+    background: #ccc;
+    width: 2px;
+    margin-left: 1px;
 }
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {

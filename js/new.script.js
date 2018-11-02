@@ -30,7 +30,7 @@ width = $(window).width();
 if (width > 430) {
 var slider = $('.scrolling_news_ul').bxSlider({  
 mode: 'vertical',
-minSlides: 6,
+minSlides: 5,
 slideMargin: 0,
 moveSlides: 1,
 auto: false,
