@@ -74,4 +74,8 @@ if (deltaY < 0 ){
 
         })
         $('[data-group]').eq(0).click();
- 
+ /*Меню*/
+ $(".close_naw").on('click', function(){
+ $(".collapse").removeClass("show");
+
+ })
