@@ -69,7 +69,10 @@ color:#ADADAD;
 	display: block;
     margin: 0 auto;
 }
-.container-title h2{
+.container-title-new h2, .container-title h2{
+text-transform: uppercase;
+}
+.uppercase{
 text-transform: uppercase;
 }
 .container-title.pull-md-right{
@@ -125,7 +128,8 @@ width:100%;
 padding: 15px;
 justify-content: space-between;
 }
-}
+.news_anons{
+margin-top: 40px;}
 .repair_title {
 	margin: 0 auto;
 	margin-top: 40px;
@@ -1107,7 +1111,7 @@ img.half{
 	background: #F7F7F7;
 }
 .overview {
-margin: 20px 0 40px 0;	
+margin: 40px 0 40px 0;	
 padding: 20px 0;
 }
 .line{
@@ -1144,6 +1148,7 @@ padding: 20px 0;
 .old__top_store__item_price {
 	font-size: 16px;
 	text-decoration: line-through;
+	opacity: 0.8;
 }
 
 .top_store__category_name {
@@ -1299,8 +1304,8 @@ input.desctop-header__search {
 		font-size: 14px;
 		line-height: 18px;
 		position: relative;
-		bottom: 0;
-		left:0;
+		margin-top:15px;
+		bottom: auto;
 		color: #333;
 		text-shadow: none;
 		font-weight: 700;
