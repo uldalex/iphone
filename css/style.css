@@ -9,6 +9,9 @@
 	width:100%;
 	clear:both;
 }
+img.responsive{
+width:100%;
+}
 .green, a.green{
 color: #02c88b!important;	
 }
@@ -1014,14 +1017,14 @@ padding: 15px;
 
 .scrolling_news {
 	
-	max-height: 570px;
+	max-height: 780px;
 	overflow: hidden;
 	border: 1px solid #cccccc;
 }
 .scrollbar-inner{
 padding: 10px 0px 10px 10px;
 position: relative;
-max-height: 570px;
+max-height: 780px;
 }
 .main_search_form {
 	margin-top: 20px;
