@@ -1,6 +1,14 @@
 
 .green, a.green{
-color: #02c88b;	
+color: #02c88b!important;	
+}
+.btn__grey{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+	background: #EEEEEE;
+	color:#333;
+    font-weight: 700;	
 }
 .text-sm{
 font-size:12px;
@@ -1238,11 +1246,12 @@ input.desctop-header__search {
 	.news_line_title__item-half {
 		font-size: 16px;
 	}
-	.news_line_title {
+	.news_line_title, .news_line_title__item-half.people {
 		font-size: 14px;
 		line-height: 18px;
 		position: relative;
 		bottom: 0;
+		left:0;
 		color: #333;
 		text-shadow: none;
 		font-weight: 700;
@@ -1397,22 +1406,34 @@ input.desctop-header__search {
 	.hidden-xs{
 		display:none;
 		}
-	.news_line_title__item-half{
-	color:#fff;
-	position: absolute;
-    bottom: 80px;
-	left: 20px;
-	font-size: 14px;
-	line-height: 18px;
+	.meta-box__news_line__item-half, .news_line_title__item-half{
+	position: relative;
+    left: 0px;
+    bottom: 0px;
+    font-size: 12px;
+    color: #333;
+    text-shadow: none;	
+	}
+	.news_line_title__filter{
+	color: #fff;
+    position: absolute;
+    bottom: 40px;
+	left: 25px;
+    font-size: 14px;
+    line-height: 28px;
 	text-shadow: 0px 0px 4px rgba(0,0,0,0.8);
-	}
-	.meta-box__news_line__item-half{
-		left: 15px;
-		bottom: 50px;
-		font-size: 12px;
-		color: #fff;
-		text-shadow: 0px 0px 4px rgba(0,0,0,0.8);	
-	}
+}
+.top_new__item-article{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;	
+}
+.top_new__item-article .img-main{
+	width:95%;
+}
+	.meta-box__news_line_link{
+		display:inline-block;
+		}
 	.container-title.pull-md-right {
 		margin-top: 0px;
 	}
@@ -1427,9 +1448,38 @@ input.desctop-header__search {
 	}
 	.scrolling_news{
 	border:none;
+	border-top: 1px solid #cccccc
 	}
 	.card.scrolling_news__item{
     height:auto;
+	}
+	.scrolling_news{
+	max-height: 672px;
+	margin-bottom:40px;	
+	}
+	.top_popular{
+	margin-top:0;
+	}
+	.footer-container{
+	text-align:center;
+	}
+	.footer .soc-links{
+	justify-content: center;	
+	}
+	.hr_mobile {
+		margin: 0px;
+		margin-bottom: 20px;
+		height: 2px;
+		box-shadow: none;
+		border: none;
+		background: #ccc;
+	}
+	.top_new__item-half.half{
+		padding-left: 0px;
+		padding-right: 0px;	
+	}
+	.filter a{
+		text-transform: none;
 	}
 
 }

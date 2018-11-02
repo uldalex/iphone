@@ -26,7 +26,8 @@
             slideWidth: 900
         });
 		
-
+width = $(window).width();
+if (width > 430) {
 var slider = $('.scrolling_news_ul').bxSlider({  
 mode: 'vertical',
 minSlides: 6,
@@ -58,7 +59,8 @@ if (deltaY < 0 ){
  
   } 
 }
-}));
+}))
+};
 /*Фильтр*/
         $('[data-group]').click(function (e) {
             e.preventDefault()
