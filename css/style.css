@@ -5,6 +5,10 @@
     padding-left: 0!important;
     padding-right: 0!important;
 }
+.clear{
+	width:100%;
+	clear:both;
+}
 .green, a.green{
 color: #02c88b!important;	
 }
@@ -932,7 +936,7 @@ margin-top:-1px;
 	position: relative;
 	left: 0;
 	color: rgba(51, 51, 51, 0.32);
-	margin: 18px 0px;
+	margin: 18px 0px 0px 0px;
 }
 .meta-box__news_line__item-half.people{
 color:#333;
@@ -1111,8 +1115,8 @@ img.half{
 	background: #F7F7F7;
 }
 .overview {
-margin: 40px 0 40px 0;	
-padding: 20px 0;
+margin: 40px 0px 0px 0px;	
+padding: 20px 0px 70px 0px
 }
 .line{
     border-bottom: 1px solid #cccccc;
@@ -1167,7 +1171,8 @@ padding: 20px 0;
 	margin-bottom: 100px;
 }
 .news_line_title__item-half-popular{
-font-weight: 300;
+font-size:18px;	
+font-weight: 100;
 line-height: 24px;
 
 }
@@ -1204,6 +1209,20 @@ font-size: 14px;
 }
 .icon_mail{
 padding-right:5px;
+}
+.brightness{
+	filter: brightness(0.7);
+	-webkit-filter: brightness(0.7);
+	-moz-filter: brightness(0.7);
+	-o-filter: brightness(0.7);
+	-ms-filter: brightness(0.7);
+}
+.brightness:hover{
+	filter: brightness(0.9);
+	-webkit-filter: brightness(0.9);
+	-moz-filter: brightness(0.9);
+	-o-filter: brightness(0.9);
+	-ms-filter: brightness(0.9);
 }
 @media (max-width: 1024px) and (min-width: 767px) {
 .navbar-nav li a{
