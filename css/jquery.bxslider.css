@@ -6,10 +6,10 @@
 
 @media (max-width: 900px) and (min-width: 450px) {
   .bx-wrapper .bx-prev {
-    left: -15px;
+    left: 0px;
   }
   .bx-wrapper .bx-next {
-    right: -15px;
+    right: 0px;
   }
 }
 
@@ -21,7 +21,9 @@
     right: 10px;
   }
 }
-
+.align-center{
+text-align:center;
+}
 .bx-wrapper {
   position: relative;
   margin-bottom: 10px;

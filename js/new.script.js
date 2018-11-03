@@ -33,16 +33,19 @@ if (width < 320) {
     maxSlides = 1;
     minSlides = 1;
     SlWidth = 320;
-}
-if (width < 430) {
+} else if (width <= 430) {
     maxSlides = 1;
     minSlides = 1;
     SlWidth = 430;
-} else if (width < 769) {
+} else if (width <= 575) {
+    maxSlides = 2;
+    minSlides = 1;
+    SlWidth = 275;
+} else if (width <= 769) {
     maxSlides = 3;
-    minSlides = 3;
+    minSlides = 2;
     SlWidth = 237;
-} else if (width < 900) {
+} else if (width <= 900) {
     maxSlides = 6;
     minSlides = 6;
     SlWidth = 230;
