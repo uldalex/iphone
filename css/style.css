@@ -958,6 +958,7 @@ a.company_photo img {
 
 .news_line_title__item-half.people {
 	font-size: 18px;
+
 }
 
 .meta-box__news_line {
@@ -977,6 +978,7 @@ a.company_photo img {
 
 .meta-box__news_line__item-half.people {
 	color: #333;
+	bottom: 15px;
 }
 
 .meta-box__news_line span {
