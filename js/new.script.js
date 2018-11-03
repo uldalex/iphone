@@ -5,7 +5,7 @@
         if (width < 430) {
             maxSlides = 1;
             minSlides = 1;
-        } else if (width < 768) {
+        } else if (width < 769) {
             maxSlides = 2;
             minSlides = 2;
         } else if (width < 900) {
@@ -27,7 +27,7 @@
         });
         
        
-width = $(window).width();
+
 
  $('.scrollbar-inner').scrollbar();
   
@@ -51,4 +51,10 @@ width = $(window).width();
  $(".close_naw").on('click', function(){
  $(".collapse").removeClass("show");
 
- })
+ });
+ $('.grid').masonry({
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true
+  });
+  
