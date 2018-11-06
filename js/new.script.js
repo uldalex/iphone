@@ -77,6 +77,7 @@ $('[data-group]').click(function (e) {
     e.preventDefault()
     $('[data-group]').removeClass('active');
     $(this).addClass('active');
+    $(".top_new__item-half .active").css('height: 455px')
     $('[data-group-target]').removeClass('active');
     var tab_group = $(this).data('group');
     $('[data-group-target]').each(function () {
@@ -98,3 +99,62 @@ $('.grid').masonry({
     columnWidth: '.grid-sizer',
     percentPosition: true
 });
+// Валидация  
+var errorValidate = $('.registerForm, .registerFormReg, .registerFormRes ');
+var pattern = /^[a-z0-9_-]+@[a-z0-9-]+\.[a-z]{2,6}$/i;
+var mail = $('.email');
+var error_name = $('.error_name');
+$(mail).on( 'focus', function() {
+$(this).addClass('error');
+$('.form__error__mail, .form__error__close').css('display', 'none');
+
+});
+$(error_name).on( 'focus', function() {
+$(this).addClass('error');
+$('.form__error__error').css('display', 'none');
+});
+error_name.blur(function(){
+if(error_name.val() != ''){
+$('.form__error__valid').css('display', 'block');    
+$('.form__error__error').css('display', 'none');
+$('.error__sumbit').attr('disabled', false);
+error_name.removeClass('error').addClass('confirm');
+
+}	
+else{
+$('.form__error__error').text('Это обязательное поле');
+ $('.form__error__error').css('display', 'block');
+error_name.addClass('error');
+$('.error__sumbit').attr('disabled', true);	
+}
+});
+$('#error__sumbit').on('click', function(){
+$('#errorMessage').css('display', 'none');
+$('#thenks').css('display', 'block');		
+});
+mail.blur(function(){
+if(mail.val() != ''){
+if(mail.val().search(pattern) == 0){
+ $('.login__sumbit').attr('disabled', false);
+mail.removeClass('error').addClass('confirm');
+$('.form__error__valid').css('display', 'block');
+}else{
+$('.form__error__mail').text('Невалидный е-mail');
+ $('.form__error__mail, .form__error__close').css('display', 'block');
+$('.login__sumbit').attr('disabled', true);
+mail.addClass('confirm');
+}
+}else{
+$('.form__error__mail').text('Это обязательное поле');
+ $('.form__error__mail, .form__error__close').css('display', 'block');
+mail.addClass('error');
+$('.login__sumbit').attr('disabled', true);
+}
+});
+/*Табы */
+$('#LoginLink a[href="#login"]').tab('show');
+$('#RegisterLink a[href="#Register"]').tab('show');
+$('#restoreLink a[href="#restore"]').tab('show')
+
+
+  
