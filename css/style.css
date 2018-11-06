@@ -68,7 +68,9 @@ input.desctop-header__search {
 }
 
 .mobile-header__input-box {
-	margin: 20px;
+	width: 260px;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .mobile-header__search-button {
