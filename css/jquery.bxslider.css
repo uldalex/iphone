@@ -138,10 +138,6 @@ ul.bxslider {
   background: url('../img/control-right.svg');
 }
 
-.bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus {
-  background-position: -43px 0;
-}
-
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
   top: 35%;
