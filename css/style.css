@@ -1544,6 +1544,9 @@ img.half {
 		background: #343A40;
 		z-index: 100;
 	}
+	.navbar-nav li a {
+	font-size: 13px;
+	}
 	.close_naw {
 		width: 15px;
 		height: 15px;
