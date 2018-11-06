@@ -1631,12 +1631,15 @@ margin: 0 auto;
 	.filter__tag {
 		font-size: 12px;
 		flex-wrap: wrap;
-		margin-bottom: 25px;
+		margin-bottom: 0px;
 		align-items: center;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 	.filter__tag :first-child{
 	flex-basis: 100%;
+	}
+	.filter__tag :first-child span{
+	display:none;
 	}
 	.news_line_title__item-half {
 		font-size: 16px;
