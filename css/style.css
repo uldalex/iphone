@@ -1826,7 +1826,7 @@ padding: 20px 0;
 		display: none;
 	}
 	.news_line_title{
-	bottom:0;
+	bottom:15px;
 	}
 	 .news_line_title__item-half {
 		position: relative;
