@@ -1457,6 +1457,7 @@ img.half {
 		display: table-cell;
 		vertical-align: top;
 	}
+	
 }
 
 @media screen and (max-width: 768px) {
@@ -1514,6 +1515,7 @@ img.half {
 	}
 	.top_popular {
 		margin-bottom: 20px;
+		margin-top: 0px;
 	}
 	.filter a {
 		margin-right: 10px;
@@ -1605,8 +1607,22 @@ img.half {
 	.scrolling_news, .scrollbar-inner {
 		max-height: 765px;
 	}
+	.navbar-nav li a {
+    font-size: 11px;
+}
+.top_new__item-half.half{
+margin-bottom:5px;	
+}
+}
+@media screen and (max-width: 680px) {
+.hidden-sm{display:none;}
+.top_store, .overview{
+margin: 0px 0 0px 0;
+padding: 20px 0;	
 }
 
+
+}
 @media screen and (max-width: 480px) {
 	.navbar, .collapse{
 	width:100%;
