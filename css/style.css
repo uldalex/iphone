@@ -1633,7 +1633,10 @@ margin: 0 auto;
 		flex-wrap: wrap;
 		margin-bottom: 25px;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-around;
+	}
+	.filter__tag :first-child{
+	flex-basis: 100%;
 	}
 	.news_line_title__item-half {
 		font-size: 16px;
