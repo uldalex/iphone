@@ -1722,7 +1722,7 @@ margin: 0 auto;
 margin-bottom:5px;	
 }
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 738px) {
 .hidden-sm{display:none;}
 .top_store, .overview{
 margin: 0px 0 0px 0;

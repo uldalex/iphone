@@ -37,7 +37,7 @@ if (width < 320) {
     maxSlides = 1;
     minSlides = 1;
     SlWidth = 430;
-} else if (width <= 680) {
+} else if (width <= 738) {
     maxSlides = 2;
     minSlides = 2;
     SlWidth = 270;
