@@ -68,7 +68,7 @@
                         <!-- /.search -->
                         <!-- /.login -->
                         <div class="login hidden-md hidden-xs">
-                            <a class="header__login-link" href="#">Регистрация</a><a class="header__login-link" href="#">Вход</a>
+                            <a href="#LoginModal" data-toggle="modal" class="header__login-link" href="#">Регистрация</a><a class="header__login-link" href="#">Вход</a>
                         </div>
                         <!-- /.login mobile -->
                         <div class="login hidden-lg ml-sm-auto ml-xs-auto">
@@ -978,6 +978,60 @@
             </div>
         </div>
     </footer>
+    <!-- Modal -->
+<div id="LoginModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content modal-content__login ">
+       <div class="modal-header modal-header__login">
+        <button type="button" class="close close__modal" data-dismiss="modal" aria-hidden="true"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25 1.13622L23.8638 0L12.5 11.3638L1.13622 0L0 1.13622L11.3638 12.5L0 23.8638L1.13622 25L12.5 13.6362L23.8638 25L25 23.8638L13.6362 12.5L25 1.13622Z" fill="#333333"/>
+            </svg>
+            </button>
+        </div>
+        <div class="modal-body modal-body__login">
+            <div class="login__links">
+                <ul>
+                   <li><a class="loginactive active" href="#" data-tab-controll="login" data-collection="modal" data-active-trigger="">Вход</a></li>
+                   <li><a href="#" data-tab-controll="Rerister" data-collection="modal">Регистрация</a></li>
+               </ul>
+            </div>
+            <div class="login__tabs">
+            <!--Таб авторизации-->	
+	<div class="login__tab active" data-tab="login" data-collection="modal">
+    <div class="soclinks-type soclinks-type_enter">
+        <a href="#">
+            <i class="icon-vk"></i>
+        </a>
+       <a href="#">
+            <i class="icon-facebook"></i>
+        </a>
+        <a href="#">
+            <i class="icon-twitter"></i>
+        </a>
+       </div>
+       <div class="modal__info-title"><span>или</span></div>
+       <form>
+            <label class="form__label m-b-30">
+            <input class="email registerForm error" type="text" placeholder="Введите email" data-validate=""><span class="form__error form__error__mail" style="display: block;">Это обязательное поле</span>
+            </label>
+            <label class="form__label m-b-30">
+            <input class="registerForm" type="text" placeholder="Введите пароль" data-validate=""><span class="form__error">Это обязательное поле</span>
+            </label>
+            <div class="text-center">
+            <a class="hide_login__links" href="#" data-collection="modal" data-no-init-tab="" data-tab-controll="restore">Забыли пароль?</a></div>
+            <div class="m-b-20">
+            <button class="login__sumbit" disabled="disabled">Войти</button>
+            </div>
+        </form>
+        </div>
+    </div>
+
+
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
     <script src="js/jquery.min.js.pagespeed.jm.r0B4QCxeCQ.js"></script>
     <script src="js/lightbox.js.pagespeed.jm.GgzTsTTK75.js"></script>
     <script src="js/scripts.min.js.pagespeed.ce.VvZxros3h1.js"></script>
