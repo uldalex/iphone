@@ -1537,7 +1537,7 @@ img.half {
 	}
 	.navbar, .collapse {
 		height: auto;
-		width: 320px;
+		width: 420px;
 		position: absolute;
 		top: 0px;
 		right: 0px;
@@ -1569,7 +1569,7 @@ img.half {
 	.navbar-nav li {
 		flex-grow: 1;
 		width: 100%;
-		padding: 15px 5px 5px 5px;
+		padding: 18px 5px 5px 5px;
 	}
 	.navbar-nav li a {
 		color: #FFFFFF;
@@ -1605,6 +1605,9 @@ img.half {
 }
 
 @media screen and (max-width: 480px) {
+	.navbar, .collapse{
+	width:100%;
+	}
 	.filter_button {
 		justify-content: center;
 		padding-top: 20px;
