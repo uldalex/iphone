@@ -251,4 +251,15 @@ $(window).scroll(function () {
 
 
     }
+    else{
+        
+      
+            $(".header").css('top', '0px');
+
+      
+
+    }
+
 });
+
+  
