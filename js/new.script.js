@@ -70,35 +70,54 @@ $('.top_store__item_list').bxSlider({
 
 
 $('.scrollbar-inner').scrollbar();
-
-
-/*Фильтр*/
-$('[data-group]').click(function (e) {
-    e.preventDefault()
-    $('[data-group]').removeClass('active');
-    $(this).addClass('active');
-    $(".top_new__item-half .active").css('height: 455px')
-    $('[data-group-target]').removeClass('active');
-    var tab_group = $(this).data('group');
-    $('[data-group-target]').each(function () {
-        if ($(this).data('group-target').includes(tab_group)) {
-            $(this).addClass('active');
-        }
-    })
-
-})
-$('[data-group]').eq(0).click();
-/*Меню*/
-$(".close_naw").on('click', function () {
-    $(".collapse").removeClass("show");
-
-});
 /*Плитка */
 $('.grid').masonry({
     itemSelector: '.grid-item',
     columnWidth: '.grid-sizer',
     percentPosition: true
 });
+var j$ = jQuery,
+    $mContainer = j$(".grid-filter"),
+    $filterButton = j$(".button_filter"),
+    $params = {
+    itemSelector: ".active",
+    filtersGroupSelector:".filter"
+    
+    };
+$('.grid-filter').masonry({
+    itemSelector: '.active',
+    columnWidth: 2,
+    percentPosition: true
+});
+var masonryOptions = {
+    itemSelector: '.active',
+    columnWidth: 2,
+  };
+var $grid = $('.grid-filter').masonry( masonryOptions );
+
+/*Фильтр*/
+$('[data-group]').click(function (e) {
+     e.preventDefault()
+    $('[data-group]').removeClass('active');
+    $(this).addClass('active');
+    $('[data-group-target]').removeClass('active');
+    var tab_group = $(this).data('group');
+    $('[data-group-target]').each(function () {
+        if ($(this).data('group-target').includes(tab_group)) {
+            $(this).addClass('active');
+        }
+    
+    })
+
+})
+$('[data-group]').eq(0).click();
+$grid.masonry('reloadItems')
+/*Меню*/
+$(".close_naw").on('click', function () {
+    $(".collapse").removeClass("show");
+
+});
+
 // Валидация  
 var errorValidate = $('.registerForm, .registerFormReg, .registerFormRes ');
 var pattern = /^[a-z0-9_-]+@[a-z0-9-]+\.[a-z]{2,6}$/i;
