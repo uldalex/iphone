@@ -1245,7 +1245,6 @@ a.company_photo img {
 	transform: scale(0);
 	position: absolute;
 	
-	
 }
 
 [data-group-target].active {
@@ -1255,7 +1254,8 @@ a.company_photo img {
 	transform: scale(1);
 	position: relative;
 	padding-bottom: 20px;
-	display:block;
+	
+	
 	
 }
 
@@ -1455,6 +1455,10 @@ fill: #333333;
 stroke: #333333;
 stroke-width: .1px;
 }
+.form__error__close svg path, .form__error__closeReg svg path, .form__error__closeRes svg path{
+fill:#CD192E;
+stroke:#CD192E;
+}
 .modal__info-confirm{
 font-size:14px;
 }
@@ -1591,7 +1595,7 @@ label.form__label{
 display:block;
 position: relative;	
 }
-.form__error {
+.form__error, .form__errorReg,.form__errorRes{
     overflow: hidden;
     font-size: 14px;
     padding-left: 15px;
@@ -1601,11 +1605,12 @@ position: relative;
 	display:none;
 	
 }
-.form__error__close, .form__error__valid{
+.form__error__close, .form__error__closeReg, .form__error__closeRes, .form__error__valid, .form__error__validReg, .form__error__validRes{
 	position: absolute;
     width: 25px;
     height: 25px;
-    padding-left: 7px;
+	padding-left: 6px;
+	padding-top: 1px;
     top: 7px;
     line-height: 22px;
     right: -30px;
@@ -1613,8 +1618,8 @@ position: relative;
 	border-radius: 50%;
 	
 }
-.form__error__valid{
-	border: 1px solid #07A23B;
+.form__error__valid, .form__error__validReg, .form__error__validRes{
+border: 1px solid #07A23B;
  color:#07A23B;
  padding-left: 4px;
  display:none;

@@ -89,29 +89,34 @@ $('.grid-filter').masonry({
     columnWidth: 2,
     percentPosition: true
 });
-var masonryOptions = {
-    itemSelector: '.active',
-    columnWidth: 2,
-  };
-var $grid = $('.grid-filter').masonry( masonryOptions );
 
+     var masonryOptions = {
+   itemSelector: '.active',
+   columnWidth: 2,
+  };
+var $grid = $('.grid-filter').masonry( masonryOptions ); 
+
+  
 /*Фильтр*/
 $('[data-group]').click(function (e) {
      e.preventDefault()
     $('[data-group]').removeClass('active');
     $(this).addClass('active');
     $('[data-group-target]').removeClass('active');
+    $grid.masonry('reloadItems');
     var tab_group = $(this).data('group');
     $('[data-group-target]').each(function () {
         if ($(this).data('group-target').includes(tab_group)) {
             $(this).addClass('active');
         }
-    
+        
     })
-
-})
+   
+});
 $('[data-group]').eq(0).click();
-$grid.masonry('reloadItems')
+$grid.masonry('reloadItems');
+
+
 /*Меню*/
 $(".close_naw").on('click', function () {
     $(".collapse").removeClass("show");
@@ -119,14 +124,25 @@ $(".close_naw").on('click', function () {
 });
 
 // Валидация  
-var errorValidate = $('.registerForm, .registerFormReg, .registerFormRes ');
+var errorValidate = $('.registerForm');
+var errorValidateReg = $('.registerFormReg');
+var errorValidateRes = $('.registerFormRes ');
 var pattern = /^[a-z0-9_-]+@[a-z0-9-]+\.[a-z]{2,6}$/i;
 var mail = $('.email');
+var mailReg = $('.emailReg');
+var mailRes = $('.emailRes');
 var error_name = $('.error_name');
 $(mail).on( 'focus', function() {
 $(this).addClass('error');
 $('.form__error__mail, .form__error__close').css('display', 'none');
-
+});
+$(mailReg).on( 'focus', function() {
+$(this).addClass('error');
+$('.form__error__mailReg, .form__error__closeReg').css('display', 'none');
+});
+$(mailRes).on( 'focus', function() {
+$(this).addClass('error');
+$('.form__error__mailRes, .form__error__closeRes').css('display', 'none');
 });
 $(error_name).on( 'focus', function() {
 $(this).addClass('error');
@@ -160,16 +176,60 @@ $('.form__error__valid').css('display', 'block');
 }else{
 $('.form__error__mail').text('Невалидный е-mail');
  $('.form__error__mail, .form__error__close').css('display', 'block');
+ $('.form__error__valid').css('display', 'none');
 $('.login__sumbit').attr('disabled', true);
 mail.addClass('confirm');
 }
 }else{
 $('.form__error__mail').text('Это обязательное поле');
  $('.form__error__mail, .form__error__close').css('display', 'block');
+ $('.form__error__valid').css('display', 'none');
 mail.addClass('error');
 $('.login__sumbit').attr('disabled', true);
 }
 });
+mailReg.blur(function(){
+    if(mailReg.val() != ''){
+    if(mailReg.val().search(pattern) == 0){
+     $('.login__sumbitReg').attr('disabled', false);
+     mailReg.removeClass('error').addClass('confirm');
+    $('.form__error__validReg').css('display', 'block');
+    }else{
+    $('.form__error__mailReg').text('Невалидный е-mail');
+     $('.form__error__mailReg, .form__error__closeReg').css('display', 'block');
+     $('.form__error__validReg').css('display', 'none');
+    $('.login__sumbitReg').attr('disabled', true);
+    mailReg.addClass('confirm');
+    }
+    }else{
+    $('.form__error__mailReg').text('Это обязательное поле');
+     $('.form__error__mailReg, .form__error__closeReg').css('display', 'block');
+     $('.form__error__validReg').css('display', 'none');
+    mailReg.addClass('error');
+    $('.login__sumbitReg').attr('disabled', true);
+    }
+    });
+    mailRes.blur(function(){
+        if(mailRes.val() != ''){
+        if(mailRes.val().search(pattern) == 0){
+         $('.login__sumbitRes').attr('disabled', false);
+         mailRes.removeClass('error').addClass('confirm');
+        $('.form__error__validRes').css('display', 'block');
+        }else{
+        $('.form__error__mailRes').text('Невалидный е-mail');
+         $('.form__error__mailRes, .form__error__closeRes').css('display', 'block');
+         $('.form__error__validRes').css('display', 'none');
+        $('.login__sumbitRes').attr('disabled', true);
+        mailRes.addClass('confirm');
+        }
+        }else{
+        $('.form__error__mailRes').text('Это обязательное поле');
+         $('.form__error__mailRes, .form__error__closeRes').css('display', 'block');
+         $('.form__error__validRes').css('display', 'none');
+        mailRes.addClass('error');
+        $('.login__sumbitRes').attr('disabled', true);
+        }
+        });
 /*Табы */
 $('#LoginLink a[href="#login"]').tab('show');
 $('#RegisterLink a[href="#Register"]').tab('show');

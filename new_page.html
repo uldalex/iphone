@@ -1018,7 +1018,10 @@
        <form>
             <label class="form__label mb20">
             <input class="email registerForm" type="text" placeholder="Email" data-validate="">
-            <span class="form__error form__error__close "><span aria-hidden="true">×</span></span>
+            <span class="form__error form__error__close "><span aria-hidden="true"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.166 0.833368C9.97806 0.645388 9.67422 0.645388 9.48624 0.833368L5.49922 4.82039L1.5122 0.833368C1.32422 0.645388 1.02037 0.645388 0.832392 0.833368C0.644411 1.02135 0.644411 1.3252 0.832392 1.51318L4.81941 5.5002L0.832392 9.48722C0.644411 9.6752 0.644411 9.97904 0.832392 10.167C0.926142 10.2608 1.04922 10.3079 1.1723 10.3079C1.29537 10.3079 1.41845 10.2608 1.5122 10.167L5.49922 6.18L9.48624 10.167C9.57999 10.2608 9.70306 10.3079 9.82614 10.3079C9.94922 10.3079 10.0723 10.2608 10.166 10.167C10.354 9.97904 10.354 9.6752 10.166 9.48722L6.17903 5.5002L10.166 1.51318C10.354 1.3252 10.354 1.02135 10.166 0.833368Z" fill="#CD192E"/>
+                </svg>
+                </span></span>
             <span class="form__valid form__error__valid"><span aria-hidden="true"><svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13.3908 0.372704L6.00181 8.68521L1.55037 5.12415C1.34364 4.95828 1.04028 4.99242 0.874892 5.19915C0.709026 5.40684 0.74268 5.70924 0.949892 5.87511L5.75758 9.72126C5.84605 9.79194 5.9523 9.82655 6.05806 9.82655C6.19076 9.82655 6.32297 9.77175 6.41768 9.66502L14.11 1.01117C14.2864 0.813089 14.2686 0.508762 14.0701 0.3328C13.871 0.155877 13.5677 0.173666 13.3908 0.372704Z" fill="#07A23B"/>
                 </svg>
@@ -1054,13 +1057,15 @@
                <div class="modal__info-title"><span>или</span></div>
                <form>
                     <label class="form__label mb20">
-                    <input class="email registerFormReg" type="text" placeholder="Email" data-validate="">
-                    <span class="form__error form__error__close "><span aria-hidden="true">×</span></span>
-                    <span class="form__valid form__error__valid"><span aria-hidden="true"><svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <input class="emailReg registerFormReg" type="text" placeholder="Email" data-validate="">
+                    <span class="form__errorReg form__error__closeReg "><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.166 0.833368C9.97806 0.645388 9.67422 0.645388 9.48624 0.833368L5.49922 4.82039L1.5122 0.833368C1.32422 0.645388 1.02037 0.645388 0.832392 0.833368C0.644411 1.02135 0.644411 1.3252 0.832392 1.51318L4.81941 5.5002L0.832392 9.48722C0.644411 9.6752 0.644411 9.97904 0.832392 10.167C0.926142 10.2608 1.04922 10.3079 1.1723 10.3079C1.29537 10.3079 1.41845 10.2608 1.5122 10.167L5.49922 6.18L9.48624 10.167C9.57999 10.2608 9.70306 10.3079 9.82614 10.3079C9.94922 10.3079 10.0723 10.2608 10.166 10.167C10.354 9.97904 10.354 9.6752 10.166 9.48722L6.17903 5.5002L10.166 1.51318C10.354 1.3252 10.354 1.02135 10.166 0.833368Z" fill="#CD192E"/>
+                        </svg></span>
+                    <span class="form__valid form__error__validReg"><span aria-hidden="true"><svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13.3908 0.372704L6.00181 8.68521L1.55037 5.12415C1.34364 4.95828 1.04028 4.99242 0.874892 5.19915C0.709026 5.40684 0.74268 5.70924 0.949892 5.87511L5.75758 9.72126C5.84605 9.79194 5.9523 9.82655 6.05806 9.82655C6.19076 9.82655 6.32297 9.77175 6.41768 9.66502L14.11 1.01117C14.2864 0.813089 14.2686 0.508762 14.0701 0.3328C13.871 0.155877 13.5677 0.173666 13.3908 0.372704Z" fill="#07A23B"/>
                         </svg>
                         </span></span>
-                    <span class="form__error form__error__mail">Это обязательное поле</span>
+                    <span class="form__error form__error__mailReg">Это обязательное поле</span>
                     </label>
   
                     <div class="text-center mb20">
@@ -1070,7 +1075,7 @@
                     </div>       
                            
                             <div class="col-xl-12 col-sm-6 text-xl-center text-xs-center mb20">
-                    <button class="login__sumbit btn-default" disabled="disabled">Зарегистрироваться</button>
+                    <button class="login__sumbitReg btn-default" disabled="disabled">Зарегистрироваться</button>
                     </div>
                 </form>
                 
@@ -1082,16 +1087,18 @@
                         <div class="modal__info-title"><span>Мы отправим ссылку для восстановления пароля на email-адрес</span></div>
                <form>
                     <label class="form__label mb20">
-                    <input class="email registerFormRes" type="text" placeholder="Email" data-validate="">
-                    <span class="form__error form__error__close "><span aria-hidden="true">×</span></span>
-                    <span class="form__valid form__error__valid"><span aria-hidden="true"><svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <input class="emailRes registerFormRes" type="text" placeholder="Email" data-validate="">
+                    <span class="form__errorRes form__error__closeRes "><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.166 0.833368C9.97806 0.645388 9.67422 0.645388 9.48624 0.833368L5.49922 4.82039L1.5122 0.833368C1.32422 0.645388 1.02037 0.645388 0.832392 0.833368C0.644411 1.02135 0.644411 1.3252 0.832392 1.51318L4.81941 5.5002L0.832392 9.48722C0.644411 9.6752 0.644411 9.97904 0.832392 10.167C0.926142 10.2608 1.04922 10.3079 1.1723 10.3079C1.29537 10.3079 1.41845 10.2608 1.5122 10.167L5.49922 6.18L9.48624 10.167C9.57999 10.2608 9.70306 10.3079 9.82614 10.3079C9.94922 10.3079 10.0723 10.2608 10.166 10.167C10.354 9.97904 10.354 9.6752 10.166 9.48722L6.17903 5.5002L10.166 1.51318C10.354 1.3252 10.354 1.02135 10.166 0.833368Z" fill="#CD192E"/>
+                        </svg></span>
+                    <span class="form__valid form__error__validRes"><span aria-hidden="true"><svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13.3908 0.372704L6.00181 8.68521L1.55037 5.12415C1.34364 4.95828 1.04028 4.99242 0.874892 5.19915C0.709026 5.40684 0.74268 5.70924 0.949892 5.87511L5.75758 9.72126C5.84605 9.79194 5.9523 9.82655 6.05806 9.82655C6.19076 9.82655 6.32297 9.77175 6.41768 9.66502L14.11 1.01117C14.2864 0.813089 14.2686 0.508762 14.0701 0.3328C13.871 0.155877 13.5677 0.173666 13.3908 0.372704Z" fill="#07A23B"/>
                         </svg>
                         </span></span>
-                    <span class="form__error form__error__mail">Это обязательное поле</span>
+                    <span class="form__errorRes form__error__mailRes">Это обязательное поле</span>
                     </label>
                <div class="col-xl-12 col-sm-6 text-xl-center text-xs-center mb20">
-                    <button class="login__sumbit btn-default" disabled="disabled">Восстановить пароль</button>
+                    <button class="login__sumbitRes btn-default" disabled="disabled">Восстановить пароль</button>
                     </div>
                 </form>
                 </div>
