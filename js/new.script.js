@@ -234,6 +234,22 @@ mailReg.blur(function(){
 $('#LoginLink a[href="#login"]').tab('show');
 $('#RegisterLink a[href="#Register"]').tab('show');
 $('#restoreLink a[href="#restore"]').tab('show')
+/*Скролл меню */
+$(window).scroll(function () {
+    var pageWidth = $(window).width();
+    var topHeight = ("60");
+   if (pageWidth > 1239) {
+        if ($(this).scrollTop() > topHeight) {
+            $(".navbar").addClass('fixed');
+        }
+        else {
+            $(".navbar").removeClass('fixed');
 
+        }
+
+
+    }
+
+});
 
   

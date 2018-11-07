@@ -111,7 +111,13 @@ input.desctop-header__search {
 	background: #343A40;
 	height: 60px;
 }
-
+.fixed{
+position: fixed;
+top:0;
+left:0;
+right:0;
+z-index:150;
+}
 .navbar-nav {
 	flex-direction: row;
 	padding-left: 15px;
