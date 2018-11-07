@@ -2058,8 +2058,3 @@ padding: 20px 0;
 	}
 	
 }
-@media screen and (max-width: 375px) {
-.modal-content__login{
-width: 97%;
-}
-}
