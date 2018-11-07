@@ -238,7 +238,7 @@ $('#restoreLink a[href="#restore"]').tab('show')
 $(window).scroll(function () {
     var pageWidth = $(window).width();
     var topHeight = ("60");
-   if (pageWidth > 1239) {
+   if (pageWidth > 769) {
         if ($(this).scrollTop() > topHeight) {
             $(".navbar").addClass('fixed');
         }
