@@ -119,10 +119,11 @@ input.desctop-header__search {
 	width: 100%;
 	height: 100%;
 	align-items: center;
+	justify-content: center;
 }
 
 .navbar-nav li {
-	flex-grow: 1;
+padding: 0px 20px;
 }
 
 .navbar-nav li a {
@@ -1244,6 +1245,7 @@ a.company_photo img {
 	transform: scale(0);
 	position: absolute;
 	
+	
 }
 
 [data-group-target].active {
@@ -1252,7 +1254,8 @@ a.company_photo img {
 	-o-transform: scale(1);
 	transform: scale(1);
 	position: relative;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
+	display:block;
 	
 }
 
@@ -1298,7 +1301,6 @@ a.company_photo img {
 .filter__tag a:hover {
 	color: #02c88b;
 }
-
 /*section top-store*/
 
 .top_store, .overview {
@@ -1817,9 +1819,7 @@ input.error {
 	.navbar-nav li a {
     font-size: 11px;
 }
-.top_new__item-half.half{
-margin-bottom:5px;	
-}
+
 }
 @media screen and (max-width: 738px) {
 .hidden-sm{display:none;}
