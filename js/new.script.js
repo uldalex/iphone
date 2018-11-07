@@ -230,10 +230,12 @@ mailReg.blur(function(){
         $('.login__sumbitRes').attr('disabled', true);
         }
         });
-/*Табы */
+
+        /*Табы */
 $('#LoginLink a[href="#login"]').tab('show');
 $('#RegisterLink a[href="#Register"]').tab('show');
 $('#restoreLink a[href="#restore"]').tab('show')
+
 /*Скролл меню */
 $(window).scroll(function () {
     var pageWidth = $(window).width();
@@ -249,7 +251,4 @@ $(window).scroll(function () {
 
 
     }
-
 });
-
-  

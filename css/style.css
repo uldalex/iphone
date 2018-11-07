@@ -1766,11 +1766,15 @@ input.error {
 	.navbar, .collapse {
 		height: auto;
 		width: 320px;
-		position: absolute;
+		position: fixed;
 		top: 0px;
-		right: 0px;
+		right:0;
 		background: #343A40;
-		z-index: 100;
+		z-index: 160;
+	}
+	.navbar-toggleable-xs.collapse.show{
+	max-height: 99vh;
+    overflow: scroll;
 	}
 	.navbar-nav li a {
 	font-size: 13px;
@@ -1778,6 +1782,8 @@ input.error {
 	.close_naw {
 		width: 15px;
 		height: 15px;
+		margin-right: 15px;
+    margin-bottom: 15px;
 	}
 	.site-title__mobile {
 		color: #fff;
@@ -1793,7 +1799,7 @@ input.error {
 		padding-left: 15px;
 		padding-right: 15px;
 		width: 100%;
-		height: 100%;
+		height: auto;
 		align-items: flex-start;
 		padding: 15px 30px;
 	}
@@ -1814,6 +1820,12 @@ input.error {
 	}
 	.header {
 		height: 45px;
+		position:fixed;
+		z-index: 150;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
 		background-color: #343A40;
 		-webkit-box-shadow: 0 3px 30px 0 rgba(0, 0, 0, .2);
 		box-shadow: 0 3px 30px 0 rgba(0, 0, 0, .2);
@@ -1850,6 +1862,7 @@ padding: 20px 0;
 @media screen and (max-width: 480px) {
 	.navbar, .collapse{
 	width:100%;
+	right:0;
 	}
 	.filter_button {
 		justify-content: center;
@@ -2039,5 +2052,8 @@ padding: 20px 0;
 	float: none;
     width: 100%;
     text-align: center;	
+	}
+	.modal-dialog{
+    margin:0;
 	}
 }
