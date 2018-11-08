@@ -984,6 +984,14 @@ margin:0px;
 	color: #333;
 	bottom: 15px;
 }
+.meta-box__news_line__item-half.category {
+    color: #333;
+    bottom: 0px;
+    margin: 0;
+}
+.category-news__image{
+padding-top:5px;
+}
 
 .meta-box__news_line span {
 	margin: 5px;
@@ -1268,6 +1276,7 @@ margin:0px;
 .news_line_title__filter {
 	bottom: 20px;
 	left: 30px;
+	right: 30px;
 }
 
 .new_tag__filter {
@@ -1306,9 +1315,11 @@ margin:0px;
 /*section top-store*/
 
 .top_store{
-	margin: 60px 0 40px 0;
+	margin: 60px 0 20px 0;
 	padding: 50px 0;
-	
+}
+.people{
+padding: 20px 0px 20px 0px;
 }
 .background__grey{
 background: #F7F7F7;
@@ -1318,7 +1329,9 @@ background: #F7F7F7;
 	margin: 40px 0px 0px 0px;
 	padding: 20px 0px 70px 0px
 }
-
+.news_anons__category{
+padding: 40px 0px 40px 0px;	
+}
 .line {
 	border-bottom: 1px solid #cccccc;
 	margin: 15px 15px 20px 15px;
