@@ -234,16 +234,17 @@ $(window).scroll(function () {
     $.data(this, 'scrollTimer', setTimeout(function() {
         if ($(this).scrollTop() > topHeight)  {  
         $(".navbar").addClass('fixed');
+        $(".header").css('height', '120px');
         $(".navbar").css('top', '0px');
         console.log("Haven't scrolled in 1000ms!");
         }
-    }, 1000));
+    }, 2000));
     var pageWidth = $(window).width();
     var topHeight = ("60");
     var st = $(this).scrollTop();
    if (pageWidth > 769) {
     if (st > lastScrollTop){
-         $(".navbar").removeClass('fixed');
+     
          $(".navbar").css('top', '-60px'); 
         }
     else if ($(this).scrollTop() < topHeight)  {
