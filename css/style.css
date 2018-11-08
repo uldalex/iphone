@@ -10,7 +10,9 @@ img.responsive {
 .green, a.green {
 	color: #02c88b!important;
 }
-
+.section__grey, .section__defoult{
+padding: 60px 0px 60px 0px;
+}
 .btn__grey {
 	display: block;
 	width: 200px;
@@ -35,7 +37,6 @@ img.responsive {
 }
 
 .container-title-new {
-	margin-top: 15px;
 	margin-bottom: 25px;
 }
 
@@ -1233,14 +1234,10 @@ padding-top:5px;
 
 /*section overview*/
 
-.overview {
-	margin-top: 60px;
-	margin-bottom: 60px;
-}
-
 .container-title__width-line {
 	border-bottom: 1px solid #cccccc;
 	padding-bottom: 15px;
+	margin-top:0px;
 }
 
 [data-group-target] {
@@ -1313,31 +1310,14 @@ padding-top:5px;
 	color: #02c88b;
 }
 /*section top-store*/
-
-.top_store{
-	margin: 60px 0 20px 0;
-	padding: 50px 0;
-}
-.people{
-padding: 20px 0px 20px 0px;
-}
 .background__grey{
 background: #F7F7F7;
-}
-
-.overview {
-	margin: 40px 0px 0px 0px;
-	padding: 20px 0px 70px 0px
-}
-.news_anons__category{
-padding: 40px 0px 40px 0px;	
 }
 .line {
 	border-bottom: 1px solid #cccccc;
 	margin: 15px 15px 20px 15px;
 	width: 100%;
 }
-
 .item_list {
 	overflow: hidden;
 }
@@ -1381,10 +1361,6 @@ padding: 40px 0px 40px 0px;
 	margin-bottom: 20px;
 }
 
-.top_popular {
-	margin-top: 60px;
-	margin-bottom: 100px;
-}
 
 .news_line_title__item-half-popular {
 	font-size: 18px;
@@ -1736,7 +1712,7 @@ input.error {
 		padding-bottom: 70px;
 	}
 	.top_banner {
-		padding-bottom: 15%;
+		margin-top: 45px;
 	}
 	.news_slide-item {
 		width: 50vw;
@@ -1747,7 +1723,7 @@ input.error {
 		float: left;
 	}
 	.top_store__item_img {
-		max-width: 100%;
+		max-width: 120px;
 	}
 	.filter_button {
 		justify-content: flex-end;
@@ -1889,6 +1865,9 @@ padding: 20px 0;
 	width:100%;
 	right:0;
 	}
+	.section__grey, .section__defoult {
+		padding: 30px 0px 30px 0px;
+	}
 	.filter_button {
 		justify-content: center;
 		padding-top: 20px;
@@ -1951,7 +1930,7 @@ padding: 20px 0;
 		padding-bottom: 0px;
 	}
 	.top_banner {
-		padding-bottom: 42%;
+		margin-top: 45px;
 	}
 	.news_slide-item {
 		width: 98vw;
@@ -2015,9 +1994,6 @@ padding: 20px 0;
 	}
 	.top_new__item-article .img-main {
 		width: 95%;
-	}
-	.top_store, .overview {
-		margin: 40px 0 20px 0;
 	}
 	.meta-box__news_line_link {
 		display: inline-block;
