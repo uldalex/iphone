@@ -92,6 +92,7 @@ $('.grid').masonry({
   
 /*Фильтр*/
 $('[data-group]').on('click', function (e) {
+    var pageWidth = $(window).width();
      e.preventDefault()
      $('[data-group]').removeClass('active');
      $(this).addClass('active');
@@ -103,8 +104,10 @@ $('[data-group]').on('click', function (e) {
        }
       
     });
+    if (pageWidth < 769) {
+
     masonryUpdate()
-    
+    }
 });
 
 
@@ -241,7 +244,7 @@ $(window).scroll(function () {
         }
     }
     else{
-           $(".header").css('top', '0px');
+          
 }
 
 });
