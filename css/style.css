@@ -1646,6 +1646,11 @@ input.error {
 	.navbar-nav li a {
 		font-size: 11px;
 	}
+	[data-group-target]{
+		-webkit-transition: 0s all ease;
+		-o-transition: 0s all ease;
+		transition: 0s all ease;	
+	}
 	input.desctop-header__search {
 		width: 369px;
 	}
@@ -1678,6 +1683,11 @@ input.error {
 }
 
 @media screen and (max-width: 768px) {
+	[data-group-target]{
+		-webkit-transition: 0s all ease;
+		-o-transition: 0s all ease;
+		transition: 0s all ease;	
+	}
 	.pagination-list, .pagination-searsh {
 		float: none;
 		justify-content: center;

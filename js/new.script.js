@@ -228,35 +228,17 @@ $('#RegisterLink a[href="#Register"]').tab('show');
 $('#restoreLink a[href="#restore"]').tab('show')
 
 /*Скролл меню */
-var lastScrollTop = 0;
 $(window).scroll(function () {
-    clearTimeout($.data(this, 'scrollTimer'));
-    $.data(this, 'scrollTimer', setTimeout(function() {
-        if ($(this).scrollTop() > topHeight)  {  
-        $(".navbar").addClass('fixed');
-        $(".header").css('height', '120px');
-        $(".navbar").css('top', '0px');
-        console.log("Haven't scrolled in 1000ms!");
-        }
-    }, 2000));
     var pageWidth = $(window).width();
     var topHeight = ("60");
-    var st = $(this).scrollTop();
    if (pageWidth > 769) {
-    if (st > lastScrollTop){
-     
-         $(".navbar").css('top', '-60px'); 
+        if ($(this).scrollTop() > topHeight) {
+            $(".navbar").addClass('fixed');
         }
-    else if ($(this).scrollTop() < topHeight)  {
-    $(".navbar").removeClass('fixed');
-    $(".navbar").css('top', 'auto');
-   
-    }  
         else {
-  $(".navbar").addClass('fixed');
-  $(".navbar").css('top', '0px');
+            $(".navbar").removeClass('fixed');
+
         }
-        lastScrollTop = st;
     }
     else{
            $(".header").css('top', '0px');
