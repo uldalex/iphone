@@ -26,6 +26,9 @@ padding: 60px 0px 60px 0px;
 .bg__dark-grey{
 background: #f9f9f9;
 }
+.def .top-discounts{
+	background: #ffffff;
+}
 
 .text-sm {
 	font-size: 12px;
