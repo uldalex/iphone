@@ -16,10 +16,15 @@ padding: 60px 0px 60px 0px;
 .btn__grey {
 	display: block;
 	width: 200px;
+	min-height: 50px;
+	line-height:50px;
 	margin: 0 auto;
 	background: #EEEEEE;
 	color: #333;
 	font-weight: 700;
+}
+.bg__dark-grey{
+background: #E5E5E5;
 }
 
 .text-sm {
@@ -369,7 +374,6 @@ a.pagination__link {
 	align-items: center;
 	float: left;
 }
-
 a.pagination-list__link, a.pagination__link-searh {
 	padding: 10px 17px;
 	border-top: 1px solid #ccc;
@@ -382,7 +386,9 @@ a.pagination-list__link, a.pagination__link-searh {
 .pagination__link_start, a.pagination__link-searh, a.pagination__link_end, ul.pagination-list :nth-child(2) a {
 	border-left: 1px solid #ccc;
 }
-
+ul.pagination-list :nth-child(2) a.pagination-list__link__no-border{
+	border-left:none;
+}
 .pagination__link_start {
 	margin-right: 20px;
 }
@@ -395,7 +401,16 @@ a.pagination__link-searh, a.pagination__link_end {
 	background-color: #02C88B;
 	color: #fff;
 }
-
+.pagination-list li.current a.pagination-list__link__no-border {
+	background-color: transparent;
+	color: #02C88B;
+}
+a.pagination-list__link__no-border{
+	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	background: transparent;
+}
 .pagination-searsh__text {
 	padding: 10px 15px;
 }
@@ -417,6 +432,11 @@ a.pagination__link-searh, a.pagination__link_end {
 a.pagination__link:hover, a.pagination__link:active, a.pagination__link:focus, a.pagination-list__link:hover, a.pagination-list__link:active, a.pagination-list__link:focus {
 	background: #02C88B;
 	color: #fff!important;
+	cursor: pointer;
+}
+a.pagination-list__link__no-border:hover, a.pagination-list__link__no-border:active, a.pagination-list__link__no-border:focus, a.pagination-list__link__no-border:hover, a.pagination-list__link__no-border:active, a.pagination-list__link__no-border:focus {
+	background: transparent;
+	color: #02C88B!important;
 	cursor: pointer;
 }
 
@@ -1632,7 +1652,19 @@ input.error {
 .tab-content>.active {
     display: block;
 }
-
+/*tag page*/
+.tag-item__with-top-border {
+	margin: 0 auto;
+    margin-top: 40px;
+    height: 1px;
+    width: 96%;
+    margin-bottom: 40px;
+    border: none;
+    background: #ccc;
+}
+.tag_plate{
+margin-bottom:40px;	
+}
 @media (max-width: 1024px) and (min-width: 767px) {
 	.navbar-nav li a {
 		font-size: 11px;
@@ -1706,6 +1738,10 @@ input.error {
 	.pagination-list li.current a {
 		border-left: 1px solid #ccc;
 		border-right: 1px solid #ccc;
+	}
+	.pagination-list li.current a.pagination-list__link__no-border{
+		border-left: none;
+		border-right:none;	
 	}
 	.repair_whattodo {
 		margin-top: 60px;
