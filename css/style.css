@@ -26,9 +26,10 @@ padding: 60px 0px 60px 0px;
 .bg__dark-grey{
 background: #f9f9f9;
 }
-.def .top-discounts{
+.bg__white{
 	background: #ffffff;
-}
+	}
+
 
 .text-sm {
 	font-size: 12px;
@@ -52,7 +53,7 @@ background: #f9f9f9;
 	position: relative;
 }
 
-input.desctop-header__search {
+input.desctop-header__search, .desctop-footer__input-box {
 	width: 469px;
 }
 
@@ -141,7 +142,7 @@ padding: 0px 20px;
 	color: #ADADAD;
 	font-size: 13px;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 400;
 }
 
 .navbar-nav li a.active, .navbar-nav li a:hover {
@@ -1059,6 +1060,9 @@ padding-top:5px;
 	padding-right: 10px;
 	height: 80px;
 }
+.card.scrolling_news__item-numeral{
+	height: 100px;
+}
 
 .scrolling_new_title {
 	font-weight: 700;
@@ -1668,6 +1672,43 @@ input.error {
 .tag_plate{
 margin-bottom:40px;	
 }
+.top-discounts, .banner_sitebar, .best-from-week__sitebar{
+margin-top:18px;
+background: #ffffff;
+padding:20px 34px;
+}
+.banner_sitebar{
+background: transparent;
+padding:0px 0px;	
+}
+.best-from-week__sitebar{
+padding:20px 10px;	
+}
+.card__top-discounts{
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    width: 100%;	
+}
+.card__top-discounts img{
+	border-radius: 20px;
+	max-width:70px;
+}
+.card__top-discounts .price .old {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #5A5A5A;
+}
+.scrolling_news_ul .card:hover svg path.numeral{
+fill: #E7EDEB;
+}
 @media (max-width: 1024px) and (min-width: 767px) {
 	.navbar-nav li a {
 		font-size: 11px;
@@ -1685,6 +1726,9 @@ margin-bottom:40px;
 	}
 	.last-item{
 	display:none;
+	}
+	.h2{
+	font-size:20px;
 	}
 }
 
@@ -1903,6 +1947,9 @@ padding: 20px 0;
 	.navbar, .collapse{
 	width:100%;
 	right:0;
+	}
+	input.desctop-header__search, .desctop-footer__input-box {
+	width:100%;	
 	}
 	.section__grey, .section__defoult {
 		padding: 30px 0px 30px 0px;
