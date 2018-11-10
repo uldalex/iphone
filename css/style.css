@@ -10,6 +10,9 @@ img.responsive {
 .green, a.green {
 	color: #02c88b!important;
 }
+.grey, a.grey {
+	color: #8E8E93!important;
+}
 .section__grey, .section__defoult{
 padding: 60px 0px 60px 0px;
 }
@@ -1288,9 +1291,6 @@ padding-top:5px;
 	transform: scale(1);
 	position: relative;
 	padding-bottom: 20px;
-	
-	
-	
 }
 
 .filter {
@@ -1709,6 +1709,30 @@ padding:20px 10px;
 .scrolling_news_ul .card:hover svg path.numeral{
 fill: #E7EDEB;
 }
+h1.post-home__title{
+font-size:32px;
+}
+a.meta-post{
+color:#8E8E93;
+font-size: 13px;
+display: flex;
+align-items: center;
+}
+svg.meta-post, .meta-post__time, .meta-post__comment-count{
+margin-right:10px;
+}
+a.meta-post:hover, a.meta-post:focus, a.meta-post:hover svg.meta-post path, a.meta-post:focus svg.meta-post path{
+	color:#02C88B;
+	fill: #02C88B;
+}
+figcaption {
+    font-style: italic;
+    font-size: 14px;
+}
+.perelink_in_article{
+background: #ffffff;	
+}
+
 @media (max-width: 1024px) and (min-width: 767px) {
 	.navbar-nav li a {
 		font-size: 11px;
@@ -1944,6 +1968,9 @@ padding: 20px 0;
 
 }
 @media screen and (max-width: 480px) {
+	.h2{
+		font-size:20px;
+		}
 	.navbar, .collapse{
 	width:100%;
 	right:0;
