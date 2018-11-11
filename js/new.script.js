@@ -109,7 +109,12 @@ $('[data-group]').on('click', function (e) {
     masonryUpdate()
     }
 });
-
+/*Фильтр комментариев*/
+$('[data-group-camment]').on('click', function (e) {
+    e.preventDefault()
+    $('[data-group-camment]').removeClass('active');
+    $(this).addClass('active');    
+});
 
 /*Меню*/
 $(".close_naw").on('click', function () {
