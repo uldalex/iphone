@@ -1795,10 +1795,10 @@ input.error {
 /*tag page*/
 .tag-item__with-top-border {
 	margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 0px;
     height: 1px;
-    width: 96%;
-    margin-bottom: 40px;
+    width: 100%;
+    margin-bottom: 20px;
     border: none;
     background: #ccc;
 }
@@ -1808,7 +1808,11 @@ margin-bottom:40px;
 .top-discounts, .banner_sitebar, .best-from-week__sitebar{
 margin-top:18px;
 background: #ffffff;
+
 padding:20px 34px;
+}
+.top-discounts, .best-from-week__sitebar{
+border: 1px solid #cccccc;	
 }
 .banner_sitebar{
 background: transparent;
