@@ -1032,10 +1032,12 @@ margin-top:40px;
 .comments .comment .rating .minus__hend{
 background: url(../img/minus_hend.svg) no-repeat center center;
 background-size:contain; 
+margin-top: 5px;
 }
 .comments .comment .rating .plus__hend{
 	background: url(../img/plus_hend.svg) no-repeat center center;
 	background-size:contain; 
+	margin-bottom: 4px;
 	}
 .comments .comment .rating .minus__hend:hover{
 	background: url(../img/minus_hend-red.svg) no-repeat center center;
@@ -1864,6 +1866,9 @@ font-size: 13px;
 display: flex;
 align-items: center;
 }
+.meta-post.news_vievs, .meta-post.news_vievs .news-vievs__count{
+margin-left:10px;
+}
 .btn-default.meta-post, .btn-default.meta-post:hover{
 color:#fff;	
 }
@@ -1898,9 +1903,6 @@ font-size:10px;
 	width:22px;
 	background: url(../img/smartphone_transparent.svg) no-repeat center center;
 }
-.post_footer{
-padding-top: 20px;	
-}
 .post-tag{
 padding: 10px 0;
 }
@@ -1911,7 +1913,7 @@ padding:0px 10px 0px 0px;
 font-weight: 700;
 }
 .post_more__item-list{
-padding:15px 0px;
+padding: 4px 0px;
 }
 .post_more__item-link span{
 	padding-bottom:2px;
