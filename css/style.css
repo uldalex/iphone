@@ -2452,6 +2452,9 @@ margin-top:0px;
     width: 100%;
     text-align: center;	
 	}
+	.first-line .text{
+	margin-top:20px;
+	}
 	
 }
 
