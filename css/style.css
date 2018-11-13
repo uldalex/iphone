@@ -16,7 +16,10 @@ img.responsive {
 .section__grey, .section__defoult{
 padding: 60px 0px 60px 0px;
 }
-.btn__grey {
+.section__defoult_small{
+padding: 30px 0px 30px 0px;	
+}
+.btn__grey, a.btn__grey {
 	display: block;
 	width: 200px;
 	min-height: 50px;
@@ -25,6 +28,10 @@ padding: 60px 0px 60px 0px;
 	background: #EEEEEE;
 	color: #333;
 	font-weight: 700;
+}
+.btn__grey:hover, a.btn__grey:hover{
+	background: #ddd;
+	color: #333;
 }
 .btn__white {
 	display: block;
@@ -1013,8 +1020,8 @@ margin-top:40px;
 }
 .comments .comment .rating .minus__hend, .comments .comment .rating .plus__hend {
     display: inline-block;
-    width: 16px; 
-    height: 16px;
+    width: 18px; 
+    height: 18px;
     line-height: 18px;
     text-align: center;
     background-color: transparent;
@@ -1145,7 +1152,10 @@ margin:0px;
 .meta-box__news_line__item-half.category {
     color: #333;
     bottom: 0px;
-    margin: 0;
+	margin: 0px;
+}
+.tag_plate .row .meta-box__news_line__item-half.category{
+	margin: 5px 0px 10px 0px;	
 }
 .category-news__image{
 padding-top:5px;
@@ -1798,7 +1808,7 @@ input.error {
     margin-top: 0px;
     height: 1px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
     border: none;
     background: #ccc;
 }
@@ -1808,11 +1818,10 @@ margin-bottom:40px;
 .top-discounts, .banner_sitebar, .best-from-week__sitebar{
 margin-top:18px;
 background: #ffffff;
-
-padding:20px 34px;
+padding:20px 20px;
 }
 .top-discounts, .best-from-week__sitebar{
-border: 1px solid #cccccc;	
+border: 1px solid #eeeeee;	
 }
 .banner_sitebar{
 background: transparent;
@@ -1849,7 +1858,7 @@ fill: #E7EDEB;
 h1.post-home__title{
 font-size:32px;
 }
-a.meta-post, .meta-post-date{
+a.meta-post, .meta-post-date, span.meta-post{
 color:#8E8E93;
 font-size: 13px;
 display: flex;
@@ -1871,8 +1880,11 @@ figcaption {
 }
 .perelink_in_article{
 background: #ffffff;
-padding: 0px 24px;
+padding: 18px 24px 32px 24px;
 border:1px solid #EEEEEE;	
+}
+.perelink_in_article .text-sm{
+font-size:10px;
 }
 .icon-phone-rete, .icon-phone-rete.no-rate:hover{
 	display:inline-block;
@@ -1916,7 +1928,8 @@ fill:#02c88b;
 cursor:pointer;
 }
 .post_subscribe{
-margin-top:50px;
+margin-top: 30px;
+margin-bottom: 30px;
 background: #02C88B;
 padding: 15px 35px 25px 20px;
 }
