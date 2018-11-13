@@ -1881,11 +1881,10 @@ figcaption {
 .perelink_in_article{
 background: #ffffff;
 padding: 2px 24px;
-border:1px solid #EEEEEE;	
+border:1px solid #EEEEEE;
+padding-bottom:25px;	
 }
-.perelink_in_article :last-child{
-margin-bottom:25px;
-}
+
 .perelink_in_article .text-sm{
 font-size:10px;
 }
