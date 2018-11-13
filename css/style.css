@@ -1883,7 +1883,7 @@ background: #ffffff;
 padding: 2px 24px;
 border:1px solid #EEEEEE;	
 }
-.perelink_in_article:last-child{
+.perelink_in_article :last-child{
 margin-bottom:25px;
 }
 .perelink_in_article .text-sm{
