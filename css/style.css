@@ -1863,6 +1863,13 @@ fill: #E7EDEB;
 h1.post-home__title{
 font-size:32px;
 }
+.post-home .post h2, .post-home .tag-list-items h2{
+font-size: 24px;
+font-weight: 700;
+}
+.post-home .tag-list-items h2{
+margin-bottom: 10px;
+}
 a.meta-post, .meta-post-date, span.meta-post{
 color:#8E8E93;
 font-size: 13px;
