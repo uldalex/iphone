@@ -2174,7 +2174,7 @@ left:35px;
 		display: block;
 	}
 	.hidden-md {
-		display: none;
+		display: none!important;
 	}
 	.header {
 		height: 45px;
@@ -2249,9 +2249,6 @@ margin-top:0px;
 	.post-tag{
 	flex-wrap: wrap;
 	justify-content: center!important;
-	}
-	.post-tag span {
-	flex-basis: 100%;
 	}
 	.navbar, .collapse{
 	width:100%;
@@ -2349,7 +2346,7 @@ margin-top:0px;
 		display: block;
 	}
 	.hidden-xs {
-		display: none;
+		display: none!important;
 	}
 	.news_line_title{
 	bottom:15px;
