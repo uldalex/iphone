@@ -1,0 +1,56 @@
+//colors
+$color_fuscous_gray_approx: #555;
+
+.loader-ellips {
+	font-size: 20px;
+	position: relative;
+	width: 4em;
+	height: 1em;
+	margin: 10px auto;
+	margin-bottom: 20px;
+}
+.loader-ellips__dot {
+	display: block;
+	width: 1em;
+	height: 1em;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0.5em;
+	background: $color_fuscous_gray_approx;
+	position: absolute;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	&:nth-child(1) {
+		left: 0;
+		animation-name: reveal;
+	}
+	&:nth-child(2) {
+		left: 0;
+		animation-name: slide;
+	}
+	&:nth-child(3) {
+		left: 1.5em;
+		animation-name: slide;
+	}
+	&:nth-child(4) {
+		left: 3em;
+		animation-name: reveal;
+		animation-direction: reverse;
+	}
+}
+@keyframes reveal {
+	from {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: scale(0.001);
+	}
+	to {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: scale(1);
+	}
+}
+@keyframes slide {
+	to {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateX(1.5em);
+	}
+}
