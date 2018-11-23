@@ -6381,9 +6381,13 @@ textarea::-webkit-input-placeholder {
 }
 .img-main {
 	display: block;
-	max-height: 450px;
 	width: 100%;
-	vertical-align: center;
+	
+}
+.img-main_news{
+	max-height: 400px;
+	object-fit: cover;
+    object-position: top;
 }
 .app-main {
 	padding-top: 0;
@@ -7488,6 +7492,8 @@ textarea::-webkit-input-placeholder {
 }
 .top_new {
 	position: relative;
+	overflow: hidden;
+    height: 400px;
 }
 .new_tag {
 	position: absolute;
