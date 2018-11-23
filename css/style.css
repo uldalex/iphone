@@ -7507,6 +7507,13 @@ textarea::-webkit-input-placeholder {
 .align-center {
   text-align: center; }
 
+.img_object-fit {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  object-position: top;
+  height: 166px; }
+
 .bx-wrapper {
   position: relative;
   margin-bottom: 10px;
@@ -7516,6 +7523,11 @@ textarea::-webkit-input-placeholder {
   .bx-wrapper img {
     max-width: 100%;
     display: block; }
+  .bx-wrapper .news_slide__item_img {
+    max-width: 100%;
+    display: block;
+    height: 212px;
+    object-fit: cover; }
   .bx-wrapper .bx-pager {
     position: absolute;
     bottom: -30px;
