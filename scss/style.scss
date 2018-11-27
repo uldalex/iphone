@@ -8191,12 +8191,13 @@ textarea::-webkit-input-placeholder {
 .card__top-discounts {
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: flex-start;
 	margin-bottom: 20px;
 	width: 100%;
 	img {
 		border-radius: 20px;
 		max-width: 70px;
+		margin-right:10px;
 	}
 	.price .old {
 		font-size: 14px;
